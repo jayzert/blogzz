@@ -1,0 +1,367 @@
+*{
+	box-sizing: border-box;
+    margin: 0;
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, h7{
+	margin: 16px 0px;
+}
+#login_body{
+    background-color: #333;
+}
+
+.note_head{
+    color: #2AAA8A;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding:12px;
+}
+.note_def{
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    background-color:rgba(0,0,0,0.05);
+    border:1px solid rgba(0,0,0,0.2);
+    padding:10px;
+    border-radius:4px;
+    width:90%;
+    margin:10px auto 4px;
+}
+#yellow_note{
+    background-color:rgba(255,255,0,0.3);
+    border:1px solid rgba(255,255,0,0.7);
+     margin-bottom: 8px;
+}
+#blue_note{
+    background-color: rgba(0,0,255,0.3);
+    border:1px solid rgba(0,0,255,0.7);
+    margin-bottom: 8px;
+}
+#green_note{
+    background-color:rgba(0,255,0,0.3);
+    border:1px solid rgba(0,255,0,0.7);
+    margin-bottom: 8px;
+}
+#red_note{
+    background-color:rgba(255,0,0,0.3);
+    border:1px solid rgba(255,0,0,0.7);
+     margin-bottom: 8px;
+}
+.logo_intro{
+    background-image: url(../images/jconnect.png);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 80px 80px;
+    width: 100%;
+    height: 100px;
+    margin: 20px 0px;
+}
+.form_holder{
+    margin: 40px auto 20px;
+    text-align:center;
+    width:90%;
+    max-width:800px;
+    border: 2px solid #2AAA8A; 
+    border-radius: 0px;
+    padding-bottom: 12px;
+    background-color: white;
+}
+#login_holder{
+    max-width: 400px;
+}
+.form_heading{ 
+	background-color: #333;
+	color: white; 
+	font-size: 28px;
+	font-weight: 700; 
+	text-align: center;
+	width: 100%;
+	padding: 16px 2px;
+	margin-bottom: 16px;
+}
+#login_heading{
+    background-color: #2AAA8A;
+}
+.admin_form{
+    width:100%;
+}
+.admin_form label{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    width: 90%;
+    margin: 10px auto;
+    text-align: left;
+    display: block;
+}
+.admin_form input{
+    background: rgba(0,0,0,0.05);
+    font-size: 15px;
+    width: 90%;
+    width: calc(90% - 8px);
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 10px 4px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid #000;
+    border-radius: 0px;
+    color: #333;
+    outline: none;
+    text-align: left;
+}
+.admin_form select{
+    background: rgba(0,0,0,0.05);
+    font-size: 15px;
+    width: 90%;
+    width: calc(90% - 8px);
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 10px 4px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #333;
+    text-align: left;
+}
+option {
+	width: 100%;
+}
+.textarea_holder{
+	width: 90%;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 10px 4px;
+ }
+.admin_form button{
+    color: white;
+    width: 90%;
+    width: calc(90% - 6px);
+    margin-bottom: 8px;
+    background: #2AAA8A;
+    border: none;
+    padding: 11px 2px;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.admin_form button:hover{
+    background-color: #000;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   } 
+.sidebar{ 
+    width: 300px; 
+    position:fixed; 
+    top:0;
+    left:0; 
+    height:100%; 
+    overflow:auto;  
+    background-color: #333; 
+    color: white;
+    background-image: url(../images/jconnect.png);
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    background-size: 80px 80px;
+    padding-top: 120px;
+} 
+.main{ 
+    margin-left: 300px; 
+    max-width: 1200px;
+} 
+.main_container{
+    width: 90%;
+    margin: auto;
+}
+.sidebar a{ 
+    display: flex;
+    margin: 12px;
+} 
+.sidebar_button{
+    background-color: inherit;
+    color: #FFFFFF;
+    margin: 0px;
+    font-size: 21px;
+    flex-grow: 1;
+    padding: 0px 10px;
+    box-shadow:0px 0px 1px 2px rgba(255,255,255,0.2);
+    border-radius: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sidebar_button:hover{
+    box-shadow:0px 0px 2px 4px rgba(255,255,0,0.2);
+}
+#general_icon{ 
+    color: #2AAA8A;
+    font-size: 120px;
+    margin-top: 20px;
+}  
+#block_link{
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+}
+#small_icon{ 
+    color: #FFFFFF;
+    font-size: 40px;
+    margin: 16px;
+}
+#link_icon{ 
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 8px;
+}
+button{
+    cursor: pointer;
+}
+table{
+    width:100%;
+    margin:12px auto;
+    border-radius:3px;
+    border:1px solid rgba(0,0,255,0.6);
+}
+tr:nth-child(even){
+    background:#f2f2f2
+}
+tr:nth-child(odd){
+    background:rgba(0,0,255,0.1);
+}
+td{
+   text-align:left;
+   font-size: 14px;
+   color:#333;
+   padding:10px 2px;
+} 
+.delete_td{
+	color: red;
+}
+.collapsible {
+  cursor: pointer;
+  display: flex;
+  margin: 12px 12px;
+}
+.collapsible_content {
+  padding: 0px 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: inherit;
+}
+.top_message{
+    padding: 20px 0px 10px;
+}
+.top_message h1{
+    color: dodgerblue;
+}
+.stats_summaries{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+.stats_summary{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+#second_summary{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.stats_summary_top{
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+#first_top{
+    background-color: #1E90FF;
+}
+#second_top{
+    background-color: #5F9EA0;
+}
+#third_top{
+    background-color: #FFA500;
+}
+.stats_summary_top_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    width: 50%;
+}
+.stats_summary_top_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    width: 50%;
+}
+.stats_summary_top_right_big_text{
+    font-size: 35px;
+}
+.stats_summary_bottom{
+    background-color: lightblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0px;
+}
+.green_button{ 
+    font-size:14px; 
+    padding:4px 8px; 
+    color:white; 
+    background: green; 
+    border:none;
+    border-radius:4px;
+    margin:3px;
+    text-decoration:none;
+    font-style:none;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px rgba(0,255,0, 0.6);
+} 
+.blue_button{ 
+    font-size:14px; 
+    padding:4px 8px; 
+    color:white; 
+    background: dodgerblue; 
+    border:none;
+    border-radius:4px;
+    margin:3px;
+    text-decoration:none;
+    font-style:none;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px rgba(0,255,0, 0.6);
+}
+.red_button{ 
+    font-size:14px; 
+    padding:4px 8px; 
+    color:white; 
+    background: red; 
+    border:none;
+    border-radius:4px;
+    margin:3px;
+    text-decoration:none;
+    font-style:none;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px rgba(255,0,0, 0.6);
+}
